@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConvertDaysYearsWeeks
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number of days: ");
+            int totalDay = int.Parse(Console.ReadLine());
+
+            int year = totalDay / 365;
+            int remaining = totalDay % 365;
+
+            int week = remaining / 7;
+            int day = remaining % 7;
+
+            Console.WriteLine($"{totalDay} day = {year} year, {week} week, {day} day");
+
+            Console.ReadLine();
+        }
+    }
+}
