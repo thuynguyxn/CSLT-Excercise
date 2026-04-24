@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SwapValuesOfTwoVariables
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first number: ");
+            double a = Double.Parse(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            double b = Double.Parse(Console.ReadLine());
+
+            double c = a;
+            a = b;
+            b = c;
+
+            Console.WriteLine("After Swapping:");
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+            Console.ReadLine();
+        }
+    }
+}
