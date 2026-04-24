@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SizeOfDataTypes
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Data types  |  Size");
+            Console.WriteLine("-------------------------");
+            Console.WriteLine($"bool           {sizeof(bool)} byte");
+            Console.WriteLine($"int            {sizeof(int)} byte");
+            Console.WriteLine($"long           {sizeof(long)} byte");
+            Console.WriteLine($"float          {sizeof(float)} byte");
+            Console.WriteLine($"double         {sizeof(double)} byte");
+            Console.WriteLine($"char           {sizeof(char)} byte");
+
+            Console.ReadLine();
+        }
+    }
+}
