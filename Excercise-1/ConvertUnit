@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConvertUnit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Unit conversion options:");
+            Console.WriteLine("Celsius to Fahrenheit");
+            Console.WriteLine("Fahrenheit to Celsius");
+
+            int select = int.Parse(Console.ReadLine());
+
+            if (select == 1)
+            {
+                Console.Write("Enter the degree Celsius: ");
+                double C = double.Parse(Console.ReadLine());
+                double F = (C * 9 / 5) + 32;
+                Console.WriteLine($"After transitioning from Celsius to Fahrenheit: {C}°C = {F:F2}°F");
+            }
+            else
+            {
+                Console.Write("Enter the degree Fahrenheit: ");
+                double F = double.Parse(Console.ReadLine());
+                double C = (F - 32) * 5 / 9;
+                Console.WriteLine($"After transitioning from Fahrenheit to Celsius: {F}°F = {C:F2}°C");
+            }
+            Console.ReadLine();
+        }
+    }
+}
