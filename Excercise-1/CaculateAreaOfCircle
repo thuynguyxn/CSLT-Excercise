@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CalculateAreaOfCircle
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+      {
+            Console.Write("Enter the radius r: ");
+            double r = double.Parse(Console.ReadLine());
+
+            double radius = Math.PI * r * r;
+
+            Console.WriteLine($"The radius of the circle is: {radius:F2}");
+
+            Console.ReadLine();
+        }
+    }
+}
